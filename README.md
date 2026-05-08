@@ -7,6 +7,17 @@ habilidade semelhantes, definidos por uma diferença máxima de pontuação (`de
 grupos justos, o sistema conta com a implementação manual e comparação de dois algoritmos de ordenação: **Insertion Sort** 
 e **Merge Sort**.
 
+## Funcionalidades do Sistema
+Conforme os requisitos do projeto, o sistema disponibiliza as seguintes operações:
+- **Inserção:** Permite adicionar um novo jogador ao final da fila de espera.
+- **Remoção:** Permite remover um jogador específico da fila através do seu identificador (ID).
+- **Ordenação (Insertion Sort):** Ordena a fila de jogadores por score em ordem crescente (e timestamp em caso de empate).
+- **Ordenação (Merge Sort):** Ordena a fila usando a estratégia de divisão e conquista e recursão.
+- **Formação de Grupo:** Busca e forma o primeiro grupo válido de tamanho definido (`groupSize`) onde a diferença de score entre
+- o maior e o menor não ultrapasse o limite estabelecido (`delta`).
+- **Recuperação de Dados:** Retorna uma cópia dos jogadores armazenados atualmente na fila.
+- **Exibição:** Mostra no console o estado atual da fila de espera de forma formatada.
+
 ## Instruções de Compilação
 Para compilar o código fonte, certifique-se de que todos os arquivos `.cpp` e `.hpp` estão no mesmo diretório e utilize o 
 compilador `g++` através do terminal:
